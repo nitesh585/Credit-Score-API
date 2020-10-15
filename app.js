@@ -109,7 +109,7 @@ app.post("/upload", (req, res)=>{
 
 // Connect the application with the mongoDb Atlas
 mongoose.connect(
-    "mongodb+srv://Niteshyadav:2020ABCD@upidata.jkqva.mongodb.net/upiData?retryWrites=true&w=majority",
+    YOUR_DB_CONNECTION_URI,
     { useUnifiedTopology: true, useNewUrlParser: true },
     (req, res) => {
         console.log('connected');
